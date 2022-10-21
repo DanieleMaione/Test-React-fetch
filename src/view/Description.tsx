@@ -38,12 +38,6 @@ export const Description = () => {
     setFavorites([getFavId || ""]);
   }, [getFavId]);
 
-  const newFav = [];
-
-  newFav.push(favorites);
-
-  console.log(newFav);
-
   const onSetFav = () => {
     localStorage.setItem("idFav", id || "");
   };
